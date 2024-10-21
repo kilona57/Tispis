@@ -1,0 +1,143 @@
+section_subject_domain_of_spacecrafts
+=> nrel_main_idtf:
+    [Раздел. Предметная область космических аппаратов]
+    (* <- lang_ru;; *);
+        [Section. Subject domain of spacecrafts] 
+    (* <- lang_en;; *);
+<- atomic_section;;
+
+section_subject_domain_of_spacecrafts = [* 
+subject_domain_of_spacecrafts
+<- sc_node_struct;
+	=> nrel_main_idtf:
+   [Предметная область космических аппаратов]
+   (* <- lang_ru;; *);
+   [Subject domain of spacecrafts]
+   (* <- lang_en;; *);
+	<- subject_domain;
+	-> rrel_maximum_studied_object_class:
+        concept_spacecrafts;
+
+	-> rrel_not_maximum_studied_object_class:
+        concept_manned_spacecrafts;
+
+	-> rrel_explored_relation:
+        nrel_delivery_to_orbit;
+        nrel_aim; 
+        nrel_structure;
+        nrel_functionality_assurance;
+        nrel_energy_generation;
+        nrel_energy_storage;
+        nrel_current_conversion;
+        nrel_distribution_management;
+        nrel_heat_transfer;
+        nrel_heat_retention;
+        nrel_data_processing;
+        nrel_data_collection;
+        nrel_data_transformation;
+        nrel_radiosignals_transfer;
+        nrel_radiosignals_reception;
+        nrel_oxigen_supply;
+        nrel_contaminant_removal;
+        nrel_air_circulation;
+        nrel_angular_velocity_measurements;
+        nrel_magnetic_field_measurement;
+        nrel_orbit_insertion;
+        nrel_trajectory_support;
+        nrel_crew_evacuation;
+        nrel_crew_notification;
+        nrel_crew_briefing;;
+
+
+*];;
+
+section_subject_domain_of_spacecrafts
+-> rrel_key_sc_element:
+   subject_domain_of_spacecrafts;
+   concept_spacecrafts;
+   concept_manned_spacecrafts;
+   concept_spaceship;
+   concept_orbital_station;
+   concept_unmanned_spacecrafts;
+   concept_artificial_earth_satellite;
+   concept_automatic_interplanetary_station;
+
+   concept_carrier_rockets;
+
+
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;  
+
+   concept_on_board_systems;
+
+   concept_power_supply_system;
+   concept_solar_batteries;
+   concept_accumulators;
+   concept_inverters;
+   concept_switchboards;
+
+   concept_spacecraft_thermoregulation_system;
+   concept_radiators;
+   concept_heat_exchangers;
+   concept_thermal_insulation; 
+
+   concept_control_system;
+   concept_onboard_computers;
+   concept_sensors; 
+   concept_data_processing_software;  
+
+   concept_communication_system;
+   concept_radio_transmitters;
+   concept_antennas; 
+
+   concept_life_support_system;
+   concept_oxygen_generators;
+   concept_filtration_systems;
+   concept_ventilation_systems; 
+
+   concept_orientation_system;
+   concept_gyroscopes;
+   concept_magnetometers; 
+
+   concept_propulsion_system;
+   concept_main_engines;
+   concept_auxiliary_jet_engines;
+
+   concept_emergency_rescue_system;    
+   concept_escape_capsules;
+   concept_emergency_alarms;
+   concept_evacuation_procedures;
+
+   nrel_delivery_to_orbit;
+   nrel_aim; 
+   nrel_structure;
+   nrel_functionality_assurance;
+   nrel_energy_generation;
+   nrel_energy_storage;
+   nrel_current_conversion;
+   nrel_distribution_management;
+   nrel_heat_transfer;
+   nrel_heat_retention;
+   nrel_data_processing;
+   nrel_data_collection;
+   nrel_data_transformation;
+   nrel_radiosignals_transfer;
+   nrel_radiosignals_reception;
+   nrel_oxigen_supply;
+   nrel_contaminant_removal;
+   nrel_air_circulation;
+   nrel_angular_velocity_measurements;
+   nrel_magnetic_field_measurement;
+   nrel_orbit_insertion;
+   nrel_trajectory_support;
+   nrel_crew_evacuation;
+   nrel_crew_notification;
+   nrel_crew_briefing;;
+
