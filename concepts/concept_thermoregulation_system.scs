@@ -1,0 +1,134 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_spacecraft_thermoregulation_system
+(* 
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система терморегуляции]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система терморегуляции)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система терморегуляции - служебная система космического аппарата,
+             обеспечивающая поддержание баланса между получаемой тепловой 
+             энергией и её отдачей, перераспределение тепловой энергией
+              между конструкциями аппарата и таким образом обеспечивает
+               заданную температуру.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_unmanned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;;
+
+<=nrel_functionality_assurance:
+   concept_power_supply_system;
+   concept_control_system;
+   concept_communication_system;
+   concept_life_support_system;
+   concept_orientation_system;
+   concept_propulsion_system;
+   concept_emergency_rescue_system;;
+
+=>nrel_heat_transfer:concept_radiators;
+concept_heat_exchangers;;
+=>nrel_heat_retention:concept_thermal_insulation;;
+
+*);;
+
+concept_device=>nrel_inclusion:
+concept_radiators
+(*
+=> nrel_main_idtf:
+   [радиатор]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (радиатор)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [радиатор - техническое устройство для рассеивания тепла в воздухе.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+   *);
+
+concept_heat_exchangers
+(*
+=> nrel_main_idtf:
+   [теплообменник]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (теплообменник)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [теплообменник - техническое устройство, в котором осуществляется теплообмен
+             между двумя средами, имеющими различные температуры.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[По принципу действия теплообменники подразделяются на рекуператоры и регенераторы. 
+В рекуператорах движущиеся теплоносители разделены стенкой. К этому типу относится 
+большинство теплообменников различных конструкций. В регенеративных теплообменниках
+ горячий и холодный теплоносители контактируют с одной и той же поверхностью поочерёдно.]
+(* <- lang_ru;; *);;
+*);
+
+concept_thermal_insulation
+(*
+=> nrel_main_idtf:
+   [теплоизоляция]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (теплоизоляция)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [теплоизоляция - элементы конструкции, уменьшающие процесс теплопередачи и
+             выполняющие роль основного термического сопротивления в конструкции.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Теплоизоляция применяется для уменьшения теплопередачи всюду,
+ где необходимо поддерживать заданную температуру]
+(* <- lang_ru;; *);; 
+*);;

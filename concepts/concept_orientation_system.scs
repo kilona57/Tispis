@@ -1,0 +1,97 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_orientation_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система ориентации]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система ориентации)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система ориентации -  одна из бортовых систем космического аппарата, обеспечивающая определённое положение осей аппарата относительно некоторых заданных направлений.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_unmanned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;;
+
+<=nrel_functionality_assurance:
+   concept_spacecraft_thermoregulation_system;
+   concept_control_system;
+   concept_communication_system;
+   concept_life_support_system;
+   concept_propulsion_system;
+   concept_emergency_rescue_system;;
+
+=>nrel_angular_velocity_measurements:concept_gyroscopes;;
+=>nrel_magnetic_field_measurement:concept_magnetometers;;
+
+*);;
+
+concept_device=>nrel_inclusion:
+concept_gyroscopes
+(*
+=> nrel_main_idtf:
+   [гироскоп]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (гироскоп)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [гироскоп - устройство, способное реагировать на изменение углов ориентации тела, на котором оно установлено, относительно инерциальной системы отсчёта.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);
+
+concept_magnetometers
+(*
+=> nrel_main_idtf:
+   [магнитометр]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (магнитометр)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [магнитометр - прибор для измерения характеристик магнитного поля и магнитных свойств материалов.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Магнитометры являются ключевыми компонентами систем ориентации космических кораблей, обеспечивая необходимую точность для выполнения навигационных задач и поддержания стабильной работы аппаратов в сложных условиях космоса.]
+(* <- lang_ru;; *);;
+*);;

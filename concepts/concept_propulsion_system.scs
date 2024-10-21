@@ -1,0 +1,102 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_propulsion_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [двигательная система]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (двигательная система)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [двигательная система - система космического аппарата, обеспечивающая его ускорение.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+=>nrel_note:
+[Преобразует различные виды энергии в механическую, при этом могут отличаться как источники энергии, так и сами способы преобразования.]
+(* <- lang_ru;; *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_unmanned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;;
+
+<=nrel_functionality_assurance:
+   concept_power_supply_system;
+   concept_control_system;
+   concept_communication_system;
+   concept_life_support_system;
+   concept_emergency_rescue_system;;
+
+=>nrel_orbit_insertion:concept_main_engines;;
+=>nrel_trajectory_support:concept_auxiliary_jet_engines;;
+*);;
+
+concept_device=>nrel_inclusion:
+concept_main_engines
+(*
+=> nrel_main_idtf:
+   [основной двигатель]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (основной двигатель)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [основной двигатель - это ключевой элемент космического аппарата, отвечающий за ускорение и маневрирование в пространстве.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Он преобразует различные виды энергии в механическую, что позволяет аппарату изменять свою скорость и направление.]
+(* <- lang_ru;; *);;
+*);
+
+concept_auxiliary_jet_engines
+(*
+=> nrel_main_idtf:
+   [вспомогательные реактивные двигатели]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (вспомогательные реактивные двигатели)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [вспомогательные реактивные двигатели - системы, которые обеспечивают маневрирование и корректировку траектории полета.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Они используются для выполнения различных задач, таких как ориентация аппарата, изменение орбиты и торможение перед входом в атмосферу или при посадке.]
+(* <- lang_ru;; *);;
+*);;

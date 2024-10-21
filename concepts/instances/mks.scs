@@ -1,0 +1,64 @@
+mks
+<- concept_orbital_station;
+=> nrel_main_idtf:
+	   [Международная космическая станция(МКС)]
+   (* <- lang_ru;; *);
+=> nrel_aim:
+	  [обеспечить возможность проведения на околоземной орбите экспериментов, требующих наличия уникальных условий космического полёта: вакуума, микрогравитации, не ослабленных земной атмосферой космических излучений.]
+	  (* <- lang_ru;; *);
+
+=> nrel_structure:
+   zarya_module
+   (* => nrel_main_idtf:
+	        [Модуль "Заря"]
+	        (* <- lang_ru;; *);;
+      =>nrel_structure: concept_control_system;
+      concept_orientation_system;
+      concept_power_supply_system;
+      concept_spacecraft_thermoregulation_system;; 
+   *);
+   star_module
+    (* => nrel_main_idtf:
+	        [Модуль "Звезда"]
+	        (* <- lang_ru;; *);;
+      =>nrel_structure: concept_control_system;
+      concept_orientation_system;
+      concept_power_supply_system;
+      concept_life_support_system;
+      concept_propulsion_system;
+      concept_communication_system;;
+   *);
+   unity_module
+       (* => nrel_main_idtf:
+	        [Модуль "Юнити"]
+	        (* <- lang_ru;; *);;
+      =>nrel_structure: 
+      concept_power_supply_system;
+      concept_life_support_system;
+      concept_communication_system;;
+   *);;
+
+proton
+<- concept_carrier_rockets;
+=> nrel_main_idtf:
+	   [Ракета-носитель "Протон"]
+   (* <- lang_ru;; *);
+=> nrel_aim:
+	  [обеспечить выведение различных космических аппаратов на орбиту.]
+	  (* <- lang_ru;; *);
+=>nrel_delivery_to_orbit:
+   venera_10
+    (* => nrel_main_idtf:
+	        ["Венера-10"]
+	        (* <- lang_ru;; *);;
+      <=nrel_inclusion:concept_interplanetary_spacecrafts;;
+      =>nrel_structure: concept_control_system;
+      concept_spacecraft_thermoregulation_system;
+      concept_orientation_system;
+      concept_power_supply_system;
+      concept_propulsion_system;
+      concept_communication_system;;
+
+   *);
+   unity_module;
+   star_module;;

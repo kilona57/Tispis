@@ -1,0 +1,1032 @@
+nrel_delivery_to_orbit  
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [средство доставки*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_spacecrafts;
+=> nrel_second_domain: concept_carrier_rockets;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_spacecrafts;
+   	 	concept_carrier_rockets
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (средство доставки*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [средство доставки* - бинарное 
+               ориентированное отношение, связывающее 
+               космические аппараты и ракеты-носители, являющиеся 
+               средством доставки космических аппаратов в космос.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_spacecrafts;
+   	 	concept_carrier_rockets
+   	 };;
+  *);;
+
+
+nrel_structure
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [строение*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_spacecrafts;
+=> nrel_second_domain: concept_on_board_systems;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_spacecrafts;
+   	 	concept_on_board_systems
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (строение*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [строение* - бинарное 
+               ориентированное отношение, связывающее 
+               космические аппараты и бортовые системы, входящие в строение космических аппаратов.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_spacecrafts;
+   	 	concept_carrier_rockets
+   	 };;
+  *);; 
+
+nrel_functionality_assurance
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [обеспечение функционирования*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_on_board_systems;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_on_board_systems
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (обеспечение функционирования*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [обеспечение функционирования* - бинарное 
+               ориентированное отношение, связывающее множество 
+               бортовых систем с бортовой системой, которая обеспечивает их функционирование.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems
+   	 };;
+  *);; 
+
+nrel_energy_generation
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [генерация энергии*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (генерация энергии*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [генерация энергии* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает генерацию энергии этой системой.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_energy_storage
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [хранение энергии*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (хранение энергии*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [хранение энергии* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает хранение энергии этой системой.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_current_conversion
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [преобразование тока*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (преобразование тока*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [преобразование тока* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает преобразование тока этой системой.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_distribution_management
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [управление распределением*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (управление распределением*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [управление распределением* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает распределение энергии этой системой к другим.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_heat_transfer
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [передача тепла*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (передача тепла*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [передача тепла* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает передачу тепла этой системой на космический аппарат.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_heat_retention
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [сохранение тепла*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (сохранение тепла*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [сохранение тепла* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает сохранение тепла этой системой на космическом аппарате.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_data_processing
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [обработка данных*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (обработка данных*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [обработка данных* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает обработку данных, полученных этой системой от датчиков.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_data_collection
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [сбор данных*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (сбор данных*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [сбор данных* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает сбор данных этой системой о состоянии космического аппарата и его окружения.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_radiosignals_transfer
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [передача радиосигналов*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (передача радиосигналов*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [передача радиосигналов* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает передачу данных этой системой на Землю.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_radiosignals_reception
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [приём радиосигналов*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (приём радиосигналов*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [приём радиосигналов* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает приём данных отправленных этой системе с Земли.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_data_transformation
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [преобразование данных в радиосигналы*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (преобразование данных в радиосигналы*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [преобразование данных в радиосигналы* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает преобразование полученных данных в радиосигналы.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_oxigen_supply
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [подача кислорода*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (подача кислорода*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [подача кислорода* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает подачу кислорода, необходимого для дыхания космонавтов.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_contaminant_removal
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [удаления загрязнений воздуха*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (удаления загрязнений воздуха*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [удаления загрязнений воздуха* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает удаление углекислого газа и вредных примесей из атмосферы космического аппарата.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_air_circulation
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [циркуляция воздуха*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (циркуляция воздуха*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [циркуляция воздуха* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает циркуляцию воздуха внутри космического аппарата.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_angular_velocity_measurements
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [определение угловой скорости*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (определение угловой скорости*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [определение угловой скорости* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое определяет угловую скорость космического аппарата в пространстве.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_magnetic_field_measurement
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [измерение магнитного поля*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (измерение магнитного поля*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [измерение магнитного поля* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое измеряет магнитное поле Земли и помогает определить направление космического аппарата относительно этого поля.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_orbit_insertion
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [выход на орбиту*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (выход на орбиту*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [выход на орбиту* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает выход на орбиту космического аппарата.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+  *);; 
+
+nrel_trajectory_support
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [поддержка траетории*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (поддержка траетории*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [поддержка траетории* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает поддержку траетории космического аппарата во время полёта.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+*);; 
+
+nrel_crew_evacuation
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [эвакуация экипажа*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (эвакуация экипажа*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [эвакуация экипажа* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает эвакуацию экипажа с космического аппарата в случае чрезвычайной ситуации.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+*);; 
+
+nrel_crew_notification
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [оповещение экипажа*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (оповещение экипажа*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [оповещение экипажа* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает оповещение экипажа космического аппарата в случае чрезвычайной ситуации.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+*);; 
+
+nrel_crew_briefing
+<- sc_node_norole_relation;
+<- relation;
+<- binary_relation;
+<- oriented_relation;
+<- antireflexive_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+=> nrel_main_idtf:
+   [инструктирование экипажа*]
+   (* <- lang_ru;; *);
+=> nrel_first_domain: concept_on_board_systems;
+=> nrel_second_domain: concept_device;
+=> nrel_definitional_domain:
+   ...
+   (*
+    	<= nrel_combination: {
+        	concept_on_board_systems;
+   	 	concept_device
+    	};;
+   *);
+<- rrel_key_sc_element:
+   ...
+   (*
+      => nrel_main_idtf:
+   	   [Опр. (инструктирование экипажа*)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [инструктирование экипажа* - бинарное 
+               ориентированное отношение, связывающее 
+               бортовую систему с устройством, которое обеспечивает инструктирование экипажа космического аппарата на случай чрезвычайной ситуации.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+      <= nrel_using_constants: {
+   	 	concept_on_board_systems;
+        concept_device
+   	 };;
+*);; 

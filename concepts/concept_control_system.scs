@@ -1,0 +1,128 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_control_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система управления]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система управления)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система управления - система космического аппарата, которая осуществляет управление двигательной установкой аппарата с
+             целью обеспечения ориентации аппарата, выполнения манёвров.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+=>nrel_note:
+[Обычно имеет связи с целевой аппаратурой, другими служебными подсистемами с целью контроля
+ и управления их состоянием. Как правило, способна обмениваться посредством бортового
+  радиокомплекса с наземными службами управления.]
+(* <- lang_ru;; *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_unmanned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;;
+
+<=nrel_functionality_assurance:
+   concept_power_supply_system;
+   concept_spacecraft_thermoregulation_system;
+   concept_communication_system;
+   concept_life_support_system;
+   concept_orientation_system;
+   concept_propulsion_system;
+   concept_emergency_rescue_system;;
+
+=>nrel_data_processing:concept_onboard_computers;
+concept_data_processing_software;;
+=>nrel_data_collection:concept_sensors;;
+*);;
+
+concept_device=>nrel_inclusion:
+concept_onboard_computers
+(*
+=> nrel_main_idtf:
+   [бортовой компьютер]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (бортовой компьютер)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [бортовой компьютер - это ключевой элемент, обеспечивающий управление всеми системами и функциями аппарата.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);
+
+concept_sensors
+(*
+   => nrel_main_idtf:
+   [датчик]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (датчик)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [датчик -  чувствительный элемент в составе системы управления космического аппарата, предназначенный для определения ориентации.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);; 
+*);
+
+concept_data_processing_software
+(*
+=> nrel_main_idtf:
+   [программное обеспечение для обработки данных]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (программное обеспечение для обработки данных)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [программное обеспечение для обработки данных -   комплекс инструментов и систем, предназначенных для управления, анализа
+             и интерпретации информации, получаемой от различных сенсоров и устройств на борту аппарата.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Это программное обеспечение обеспечивает выполнение научных задач, управление полетом и обработку телеметрических данных.]
+(* <- lang_ru;; *);;
+*);;

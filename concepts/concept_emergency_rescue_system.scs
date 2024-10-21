@@ -1,0 +1,105 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_emergency_rescue_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система аварийного спасения]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система аварийного спасения)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система аварийного спасения - бортовая система для спасения экипажа космического корабля в случае возникновения аварийной ситуации на пилотируемых космических аппаратах, при которой вывод корабля на запланированную орбиту становится невозможен, или при создании угрозы для жизни.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_astronomical_spacecrafts;  
+   concept_long_lived_spacecrafts;;
+
+=>nrel_crew_evacuation:concept_escape_capsules;;
+=>nrel_crew_notification:concept_emergency_alarms;;
+=>nrel_crew_briefing:concept_evacuation_procedures;;
+
+*);;
+
+concept_device=>nrel_inclusion:
+concept_escape_capsules
+(*
+=> nrel_main_idtf:
+   [спасательная капсула]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (спасательная капсула)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [спасательная капсула - закрытое катапультируемое устройство, предназначенное для спасения членов экипажа из космического аппарата в аварийных ситуациях.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);
+concept_emergency_alarms
+(*
+=> nrel_main_idtf:
+   [аварийная сигнализация]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (аварийная сигнализация)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [аварийная сигнализация - устройство, которое немедленно распознает аварийное состояние, определяет тип аварии и выдает звуковой и световой сигнал.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);;
+
+concept_evacuation_procedures
+=> nrel_main_idtf:
+   [процедуры эвакуации]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (процедуры эвакуации)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [процедуры эвакуации - комплекс действий и систем, предназначенных для обеспечения безопасности экипажа в случае аварийных ситуаций.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);
+=>nrel_note:
+[Эти процедуры могут варьироваться в зависимости от типа космического аппарата и стадии полета.]
+(* <- lang_ru;; *);;

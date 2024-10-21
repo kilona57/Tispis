@@ -1,0 +1,107 @@
+concept_on_board_systems=>nrel_inclusion:
+concept_life_support_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система жизнеобеспечения]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система жизнеобеспечения)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система жизнеобеспечения - группа устройств, которые позволяют человеку выживать в космосе и поддерживать жизнь экипажу корабля.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;; 
+
+=>nrel_oxigen_supply:concept_oxygen_generators;;
+=>nrel_contaminant_removal:concept_filtration_systems;;
+=>nrel_air_circulation:concept_ventilation_systems;;
+*);;
+
+concept_device=>nrel_inclusion:
+concept_oxygen_generators
+(*
+=> nrel_main_idtf:
+   [генератор кислорода]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (генератор кислорода)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [генератор кислорода - устройство, которое обеспечивает необходимый уровень кислорода для дыхания, а также участвует в системах жизнеобеспечения, которые поддерживают замкнутый цикл ресурсов.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);
+
+concept_filtration_systems
+(*
+=> nrel_main_idtf:
+   [система фильтрации]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система фильтраци)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система фильтраци - система, предназначенная для обеспечения чистоты воздуха и поддержания безопасных условий для жизни экипажа.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Эти системы играют ключевую роль в удалении вредных газов, загрязняющих веществ и микропримесей из замкнутой атмосферы.]
+(* <- lang_ru;; *);;
+*);
+
+concept_ventilation_systems
+(*
+=> nrel_main_idtf:
+   [система вентиляции]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система вентиляции)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система вентиляции - система, которая обеспечивает циркуляцию и очистку воздуха в замкнутом пространстве, что критически важно для поддержания жизнедеятельности экипажа.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);;

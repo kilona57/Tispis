@@ -1,0 +1,212 @@
+concept_on_board_systems
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [бортовая система]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (бортовая система)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [бортовая система - это совокупность систем космического аппарата, обеспечивающих
+             управление функционированием всех его систем как единого целого.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);
+=> nrel_note:
+[бортовые системы космического аппарата, 
+связаны между собой информационными каналами.]
+(* <- lang_ru;; *);
+
+=>nrel_inclusion:
+concept_power_supply_system
+(*
+<- sc_node_class;;
+<- class;;
+=> nrel_main_idtf:
+   [система электроснабжения]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (система электроснабжения)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [система электроснабжения - система космического аппарата, обеспечивающая электропитание
+             других систем, является одной из важнейших систем, во многом именно 
+             она определяет геометрию космических аппаратов, конструкцию, массу, 
+             срок активного существования.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+
+<=nrel_structure:
+   concept_manned_spacecrafts;
+   concept_unmanned_spacecrafts;
+   concept_visited_spacecrafts; 
+   concept_suborbital_spacecrafts;
+   concept_near_Earth_spacecrafts;
+   concept_interplanetary_spacecrafts;
+   concept_meteorological_spacecrafts;
+   concept_navigational_spacecrafts; 
+   concept_astronomical_spacecrafts;  
+   concept_short_lived_spacecrafts;
+   concept_long_lived_spacecrafts;;
+
+<=nrel_functionality_assurance:
+   concept_spacecraft_thermoregulation_system;
+   concept_control_system;
+   concept_communication_system;
+   concept_life_support_system;
+   concept_orientation_system;
+   concept_propulsion_system;
+   concept_emergency_rescue_system;;
+
+=> nrel_note:
+[Выход из строя системы энергоснабжения ведёт к отказу всего аппарата.]
+(* <- lang_ru;; *);;
+
+=>nrel_energy_generation:concept_solar_batteries;;
+=>nrel_energy_storage:concept_accumulators;;
+=>nrel_current_conversion:concept_inverters;;
+=>nrel_distribution_management:concept_switchboards;;
+
+*);;
+
+concept_device
+<- sc_node_class;
+<- class;
+=> nrel_main_idtf:
+   [устройство]
+   (* <- lang_ru;; *);
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (устройство)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [устройство -  рукотворный объект (прибор, механизм, конструкция, установка, аппарат, машина) со сложным внутренним строением, созданный для выполнения определённых функций, обычно в области техники.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);
+
+=>nrel_inclusion:
+concept_solar_batteries
+(*
+=> nrel_main_idtf:
+   [солнечные батареи]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (солнечные батареи)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [солнечные батареи - объединение фотоэлектрических преобразователей (фотоэлементов) — 
+            полупроводниковых устройств, прямо преобразующих солнечную энергию 
+            в постоянный электрический ток, в отличие от солнечных коллекторов, 
+            производящих нагрев материала-теплоносителя.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+ *);
+
+concept_accumulators
+(*
+=> nrel_main_idtf:
+   [аккумулятор]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (аккумулятор)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [солнечные батареи - вторичный химический источник тока
+             многоразового действия, который может быть вновь заряжен
+              после разряда.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+*);
+
+concept_inverters
+(*
+=> nrel_main_idtf:
+   [инвертор]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (инвертор)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [солнечные батареи - устройство для преобразования постоянного 
+            тока в переменный с изменением величины напряжения.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+  *);;
+=>nrel_note:
+[Обычно представляет собой генератор периодического напряжения,
+ по форме приближённого к синусоиде, или дискретного сигнала.]
+(* <- lang_ru;; *);;
+*);
+
+concept_switchboards
+(*
+=> nrel_main_idtf:
+   [распределительный щит]
+   (* <- lang_ru;; *);;
+
+<- rrel_key_sc_element:
+   ...
+   (* => nrel_main_idtf:
+   	   [Опр. (распределительный щит)]
+   	   (* <- lang_ru;; *);;
+      <- definition;;
+      <= nrel_sc_text_translation:
+   	    ...
+   	    (*
+   	       -> rrel_example:
+   		    [распределительный щит - комплектное устройство, предназначенное для приема и 
+            распределения электрической энергии при напряжении менее 1000 В одно- и трехфазного
+             переменного тока частотой 50—60 Гц, нечастого включения и отключения
+              линий групповых цепей, а также для их защиты при перегрузках и коротких замыканиях.]
+   		    (* <- lang_ru;; *);;
+   	    *);;
+*);;
+*);;
+
+
